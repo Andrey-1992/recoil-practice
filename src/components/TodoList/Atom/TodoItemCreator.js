@@ -10,7 +10,7 @@ function getId() {
 
 export const TodoItemCreator = () => {
   const [inputValue, setInputValue] = useState('');
-  const setTodoList = useSetRecoilState(todoListState);
+  const setTodoList = useSetRecoilState(todoListState); // RecoilState because it woudl midufy it.
 
   const addItem = () => {
     setTodoList((oldTodoList) => [

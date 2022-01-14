@@ -6,7 +6,7 @@ import {
   useRecoilValue,
 } from 'recoil';
 
-const todoListState = atom({
+export const todoListState = atom({
   key: 'todoListState',
   default: [],
 })

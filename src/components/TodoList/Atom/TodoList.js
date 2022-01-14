@@ -1,10 +1,10 @@
 import { useRecoilValue } from "recoil";
-import { todoListState} from './Atom';
+import { todoListState } from './Atom';
 import { TodoItemCreator } from './TodoItemCreator';
 import { TodoItem } from './TodoItem';
 
 export const TodoList = () => {
-  const todolist = useRecoilValue(todoListState);
+  const todoList = useRecoilValue(todoListState); // Use RecoilValue beacuse it only reads the value is not going to change it.
 
   return (
     <>
