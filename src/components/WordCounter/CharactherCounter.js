@@ -1,8 +1,11 @@
- import { TextInput } from './atom&selector';
+ import { TextInput, CharacterCount } from './atom&selector';
 
 export const CharacterCounter = () => {
   return (
-    <TextInput /> 
+    <div>
+      <TextInput /> 
+      <CharacterCount />
+    </div>
   )
 }
 
