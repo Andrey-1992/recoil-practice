@@ -1,6 +1,6 @@
- import { TextInput } from './TextInput';
+ import { TextInput } from './atom&selector';
 
-export const characterCounter = () => {
+export const CharacterCounter = () => {
   return (
     <TextInput /> 
   )

@@ -1,4 +1,4 @@
-import { useRecoilState } from "recoil"
+import { atom, useRecoilState } from "recoil"
 
 const textState = atom({
   key: 'textState',
