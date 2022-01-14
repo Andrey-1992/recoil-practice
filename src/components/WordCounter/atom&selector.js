@@ -14,10 +14,6 @@ const textState = atom({
 export const TextInput = () => {
   const [text, setText] = useRecoilState(textState);
 
-  const onChange = (event) => {
-    setText(event.target.value);
-};
-
   return (
     <div>
       <input type='text' value={text} onChange={(event) => setText(event.target.value)} />
@@ -30,7 +26,7 @@ export const TextInput = () => {
 const charCountState = selector({
   key: 'charCountState', // unique ID (with respect to other atoms/selectors)
   get: ({get}) => {
-    const text = get(textState);
+    const text = get(textState); // Must take the atom (textState)
 
     return text.length;
   },
